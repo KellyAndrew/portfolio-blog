@@ -1,4 +1,3 @@
-@'
 <img width="605" height="345" alt="Blog banner" src="https://github.com/user-attachments/assets/657179fb-e11f-4a04-a67d-e973cfc0536b" />
 
 # Portfolio Blog (Astro + Astro Paper)
