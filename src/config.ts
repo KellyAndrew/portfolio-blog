@@ -1,7 +1,7 @@
 export const SITE = {
-  website: "https://andrewkelly.de/", // replace this with your deployed domain
+  website: "https://www.andrewkelly.de/", // replace this with your deployed domain
   author: "Andrew Kelly",
-  profile: "https://andrewkelly.de/",
+  profile: "https://www.andrewkelly.de/",
   desc: "API & security technical writing — docs-as-code portfolio and notes.",
   title: "Andrew Kelly",
   ogImage: "astropaper-og.jpg",
