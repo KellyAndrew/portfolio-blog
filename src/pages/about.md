@@ -5,33 +5,33 @@ title: "About"
 
 AstroPaper is a minimal, accessible and SEO-friendly blog theme built with [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/).
 
-![Astro Paper](public/About-banner.png)
+<img src="/About-banner.png" alt="About" style="max-width: 100%; height: auto;" />
 
-AstroPaper provides a solid foundation for blogs, or even portfolios\_ with full markdown support, built-in dark mode, and a clean layout that works out-of-the-box.
+# About
 
-The blog posts in this theme also serve as guides, docs or example articles\_ making AstroPaper a flexible starting point for your next content-driven site.
+I work at the intersection of **technical writing, APIs, and security**.
 
-## Features
+My background is in technical translation and documentation for software systems, where accuracy, context, and user impact are critical. Over time, my focus has shifted toward **API documentation and security-adjacent domains** — including authentication, authorization, error handling, and failure modes in distributed systems.
 
-AstroPaper comes with a set of useful features that make content publishing easy and effective:
+I’m particularly interested in how documentation influences **correct usage, safe integration, and operational decision-making**. Documentation is not neutral: the language, structure, and constraints it presents directly affect how systems are used and how risk is managed.
 
-- SEO-friendly
-- Fast performance
-- Light & dark mode
-- Highly customizable
-- Organizable blog posts
-- Responsive & accessible
-- Static search with [PageFind](https://pagefind.app/)
-- Automatic social image generation
+This site brings together a technical blog, a documentation project built with Starlight, and selected portfolio material relevant to **technical writing and security governance**. I value explicit assumptions, visible trade-offs, and clear communication of risk. When something is uncertain, I say so. When something is dangerous, it should be obvious.
 
-and so much more.
+This site is a working space, not a marketing surface. It evolves as my understanding deepens.
 
-## Show your support
+---
 
-If you like [AstroPaper](https://github.com/satnaing/astro-paper), consider giving it a star ⭐️.
+## What you’ll find here
 
-Found a bug 🐛 or have an improvement ✨ in mind? Feel free to open an [issue](https://github.com/satnaing/astro-paper/issues), submit a [pull request](https://github.com/satnaing/astro-paper/pulls) or start a [discussion](https://github.com/satnaing/astro-paper/discussions).
+- **Blog:** short technical notes on APIs, documentation systems, and security-adjacent topics  
+- **Docs:** a structured Starlight documentation project (information architecture, patterns, examples)  
+- **Portfolio material:** selected samples that reflect how I think and work
 
-If you find this theme helpful, you can also [sponsor me on GitHub](https://github.com/sponsors/satnaing) or [buy me a coffee](https://buymeacoffee.com/satnaing) to show your support — every penny counts.
+---
 
-Kyay zuu! 🙏🏼
+## Contact
+
+- Email: **hello@andrewkelly.de**  
+- GitHub: **https://github.com/KellyAndrew**  
+- Docs: **https://docs.andrewkelly.de**
+
