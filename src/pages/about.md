@@ -3,11 +3,7 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-AstroPaper is a minimal, accessible and SEO-friendly blog theme built with [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/).
-
 <img src="/About-banner.png" alt="About" style="max-width: 100%; height: auto;" />
-
-# About
 
 I work at the intersection of **technical writing, APIs, and security**.
 
