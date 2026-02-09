@@ -26,8 +26,8 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
       <h1 class="my-4 inline-block text-4xl font-bold sm:my-8 sm:text-5xl">
         API &amp; security technical writing
       </h1>
+
       <a
-        target="_blank"
         href="/rss.xml"
         class="inline-block"
         aria-label="rss feed"
@@ -42,24 +42,33 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
       </a>
 
       <p>
-        I work at the intersection of <strong>technical writing, APIs, and security</strong>.
-  This site collects working notes, a docs-as-code portfolio, and a structured documentation
-  project built with Astro.
+        I work at the intersection of <strong
+          >technical writing, APIs, and security</strong
+        >. This site is a docs-as-code portfolio focused on correct integration,
+        safe defaults, and operational clarity.
       </p>
+
       <p class="mt-2">
-        Read the blog posts or check the
         <LinkButton
           class="underline decoration-dashed underline-offset-4 hover:text-accent"
-          href="https://github.com/KellyAndrew/portfolio-blog/blob/main/README.md"
+          href="/posts/"
         >
-          README
-        </LinkButton> for more info.
+          Read posts
+        </LinkButton>
+        <span class="mx-2">·</span>
+        <LinkButton
+          class="underline decoration-dashed underline-offset-4 hover:text-accent"
+          href="https://docs.andrewkelly.de"
+        >
+          View docs
+        </LinkButton>
       </p>
+
+      <!-- only display if at least one social link is enabled -->
       {
-        // only display if at least one social link is enabled
         SOCIALS.length > 0 && (
           <div class="mt-4 flex max-sm:flex-col sm:items-center">
-            <div class="me-2 mb-1 whitespace-nowrap sm:mb-0">Social Links:</div>
+            <div class="me-2 mb-1 whitespace-nowrap sm:mb-0">Connect:</div>
             <Socials />
           </div>
         )
