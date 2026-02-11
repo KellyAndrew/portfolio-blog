@@ -5,20 +5,54 @@
 
 :root,
 html[data-theme="light"] {
-  --background: #fdfdfd;
-  --foreground: #282728;
-  --accent: #006cac;
-  --muted: #e6e6e6;
-  --border: #ece9e9;
+  --background: #DAD4C8;  /* warm grey paper */
+  --foreground: #0B1220;  /* deep ink */
+
+  --accent: #0F766E;      /* teal links */
+
+  --muted: #F1EEE7;       /* panels/cards: lighter than bg */
+  --border: #BDB4A4;      /* warm border */
 }
 
-html[data-theme="dark"] {
-  --background: #212737;
-  --foreground: #eaedf3;
-  --accent: #ff6b01;
-  --muted: #343f60;
-  --border: #ab4b08;
+
+/* ---------- Light mode: make post-list titles pop ---------- */
+html[data-theme="light"] {
+  --accent-title: #00A99D; /* punchier headline teal */
 }
+
+/* Post list / cards (AstroPaper) */
+html[data-theme="light"] .post-card h2 a,
+html[data-theme="light"] .post-card h3 a,
+html[data-theme="light"] .post-title a,
+html[data-theme="light"] a.post-title,
+html[data-theme="light"] main h2 a {
+  color: var(--accent-title) !important;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+html[data-theme="light"] .post-card h2 a:hover,
+html[data-theme="light"] .post-card h3 a:hover,
+html[data-theme="light"] .post-title a:hover,
+html[data-theme="light"] a.post-title:hover,
+html[data-theme="light"] main h2 a:hover {
+  color: #00C2B2 !important; /* brighter hover */
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 2px;
+}
+
+
+
+html[data-theme="dark"] {
+  /* Dark mode — deep navy + teal/cyan */
+  --background: #0B1220;
+  --foreground: #EAF0FF;
+  --accent: #22D3EE;
+  --muted: #111C2E;
+  --border: #1F2A44;
+}
+
 
 @theme inline {
   --font-app: var(--font-google-sans-code);
@@ -61,6 +95,23 @@ html[data-theme="dark"] {
 
 .active-nav {
   @apply underline decoration-wavy decoration-2 underline-offset-8;
+}
+/* --- Light mode: make blog post titles pop --- */
+html[data-theme="light"] main h1 a,
+html[data-theme="light"] main h2 a,
+html[data-theme="light"] main h3 a {
+  color: #00C2B2 !important; /* bright headline teal */
+  font-weight: 800 !important;
+  text-decoration: none !important;
+}
+
+html[data-theme="light"] main h1 a:hover,
+html[data-theme="light"] main h2 a:hover,
+html[data-theme="light"] main h3 a:hover {
+  color: #00E6D6 !important;
+  text-decoration: underline !important;
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 2px;
 }
 
 /* Source: https://piccalil.li/blog/a-more-modern-css-reset/ */
