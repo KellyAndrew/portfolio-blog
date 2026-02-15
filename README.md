@@ -2,6 +2,11 @@
 
 # Portfolio Blog (Astro + Astro Paper)
 
+[![Blog](https://img.shields.io/badge/blog-andrewkelly.de-blue)](https://www.andrewkelly.de/)
+[![CI](https://github.com/KellyAndrew/my-site/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/KellyAndrew/my-site/actions/workflows/ci.yml)
+[![Deploy](https://github.com/KellyAndrew/my-site/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/KellyAndrew/my-site/actions/workflows/deploy.yml)
+[![Built with Astro](https://img.shields.io/badge/built%20with-Astro-ff5d01)](https://astro.build)
+
 This repository contains my portfolio/blog site built with Astro (Astro Paper). It’s part of a two-site docs-as-code setup:
 
 - **Blog/portfolio (this repo):** short technical notes + portfolio material
