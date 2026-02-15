@@ -15,4 +15,10 @@ export default [
   },
   { rules: { "no-console": "error" } },
   { ignores: ["dist/**", ".astro", "public/pagefind/**"] },
+  {
+    files: ["scripts/**/*.{js,mjs,cjs}"],
+    rules: {
+      "no-console": "off",
+    },
+  },
 ];
