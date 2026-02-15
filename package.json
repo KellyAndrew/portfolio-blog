@@ -10,7 +10,9 @@
     "astro": "astro",
     "format:check": "prettier --check .",
     "format": "prettier --write .",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "check": "pnpm run lint && pnpm run format:check && pnpm run build"
+
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.14",
