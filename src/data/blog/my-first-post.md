@@ -73,6 +73,7 @@ Over the next few weeks I’ll publish:
 If you’re hiring for API/security documentation work in Germany, or you need help making complex technical systems readable, this site will show exactly how I work.
 
 ---
+
 **Links**
 
 - Docs: [https://docs.andrewkelly.de/]

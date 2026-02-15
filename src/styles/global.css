@@ -9,33 +9,33 @@
 
 :root,
 html[data-theme="light"] {
-  --background: #CBD5E1; 
-  --foreground: #020617; 
-  --muted: #94A3B8;      
-  --border: #475569;     
+  --background: #cbd5e1;
+  --foreground: #020617;
+  --muted: #94a3b8;
+  --border: #475569;
 
-  --accent: #0D9488;        
-  --accent-orange: #C2410C; 
+  --accent: #0d9488;
+  --accent-orange: #c2410c;
 
   --color-tag-bg: color-mix(in srgb, var(--accent-orange) 15%, white);
   --color-tag-text: var(--accent-orange);
 
-  --ak-code-bg: #022C2B;       
-  --ak-code-text: #CCFBF1; 
-  --ak-code-border: #134E4A; 
+  --ak-code-bg: #022c2b;
+  --ak-code-text: #ccfbf1;
+  --ak-code-border: #134e4a;
 
   --sl-color-accent: var(--accent-orange);
   --sl-color-text-accent: var(--accent);
-  --sl-color-bg-inline-code: #BCCADC;
+  --sl-color-bg-inline-code: #bccadc;
 }
 
 html[data-theme="dark"] {
-  --background: #0B1220;
-  --foreground: #EAF0FF;
-  --accent: #22D3EE;
-  --muted: #111C2E;
-  --border: #1F2A44;
-  --accent-orange: #EA580C;
+  --background: #0b1220;
+  --foreground: #eaf0ff;
+  --accent: #22d3ee;
+  --muted: #111c2e;
+  --border: #1f2a44;
+  --accent-orange: #ea580c;
 }
 
 @theme inline {
@@ -43,7 +43,7 @@ html[data-theme="dark"] {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-accent: var(--accent);
-  --color-cta: var(--accent-orange); 
+  --color-cta: var(--accent-orange);
   --color-muted: var(--muted);
   --color-border: var(--border);
 }
@@ -67,13 +67,16 @@ html[data-theme="dark"] {
     color: var(--foreground);
     font-family: var(--font-app);
   }
-  a, button {
+  a,
+  button {
     outline-offset: 1px;
   }
 }
 
-@utility max-w-app { max-width: 48rem; }
-@utility app-layout { 
+@utility max-w-app {
+  max-width: 48rem;
+}
+@utility app-layout {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -117,7 +120,7 @@ html[data-theme="light"] main p a:not(.tag) {
    Light mode: Tags
    ========================= */
 
-html[data-theme="light"] .tag, 
+html[data-theme="light"] .tag,
 html[data-theme="light"] a[href^="/tags/"],
 html[data-theme="light"] .badge {
   display: inline-flex !important;
@@ -134,7 +137,7 @@ html[data-theme="light"] .badge {
   transition: all 0.1s ease-in-out;
 }
 
-html[data-theme="light"] .tag:hover, 
+html[data-theme="light"] .tag:hover,
 html[data-theme="light"] a[href^="/tags/"]:hover,
 html[data-theme="light"] .badge:hover {
   background-color: var(--accent-orange) !important;

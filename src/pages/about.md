@@ -19,15 +19,14 @@ This site is a working space, not a marketing surface. It evolves as my understa
 
 ## What you’ll find here
 
-- **Blog:** short technical notes on APIs, documentation systems, and security-adjacent topics  
-- **Docs:** a structured Starlight documentation project (information architecture, patterns, examples)  
+- **Blog:** short technical notes on APIs, documentation systems, and security-adjacent topics
+- **Docs:** a structured Starlight documentation project (information architecture, patterns, examples)
 - **Portfolio material:** selected samples that reflect how I think and work
 
 ---
 
 ## Contact
 
-- Email: **hello@andrewkelly.de**  
-- GitHub: **https://github.com/KellyAndrew**  
+- Email: **hello@andrewkelly.de**
+- GitHub: **https://github.com/KellyAndrew**
 - Docs: **https://docs.andrewkelly.de**
-
