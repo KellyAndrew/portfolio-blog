@@ -25,8 +25,6 @@ I’m running two sites from two separate GitHub repos:
 - **Portfolio/blog (Astro Paper):** the place for posts, case studies, and project notes.
 - **Docs site (Astro Starlight):** a structured API documentation site (Start here → Concepts → Guides → Reference → Help).
 
-The blog header links directly to the docs site, so anyone reading a post can jump straight to the “show me the docs” part.
-
 ## Why this setup
 
 I’m optimizing for three things:
