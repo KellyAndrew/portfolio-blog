@@ -3,8 +3,8 @@ title: "My docs-as-code setup: blog + API docs with automated publishing"
 
 description: "How I run an Astro Paper blog and an Astro Starlight docs site with GitHub Actions + Pages deploying on every push."
 
-pubDatetime: 2026-02-08T16:00:00+01:00
-modDatetime: 2026-02-08T17:35:10+01:00
+pubDatetime: 2026-10-17T17:45:00+02:00
+modDatetime: 2026-10-17T17:45:00+02:00
 tags:
   - technical-writing
   - api-documentation
