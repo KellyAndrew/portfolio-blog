@@ -4,7 +4,7 @@ title: "My docs-as-code setup: blog + API docs with automated publishing"
 description: "How I run an Astro Paper blog and an Astro Starlight docs site with GitHub Actions + Pages deploying on every push."
 
 pubDatetime: 2026-10-17T17:45:00+02:00
-modDatetime: 2026-10-17T17:45:00+02:00
+modDatetime: 2026-10-17T18:29:00+02:00
 tags:
   - technical-writing
   - api-documentation
@@ -23,7 +23,7 @@ This site is deliberately simple: fewer moving parts, more shipping. The goal is
 I’m running two sites from two separate GitHub repos:
 
 - **Portfolio/blog (Astro Paper):** the place for posts, case studies, and project notes.
-- **Docs site (Astro Starlight):** a structured API documentation site (Start here → Concepts → Guides → Reference → Help).
+- **Docs site (Astro Starlight):** the reference specification for [EmbargoGate API](https://docs.andrewkelly.de/), a portfolio project modelling a Coordinated Vulnerability Disclosure (CVD) and SBOM ingestion engine aligned with the EU Cyber Resilience Act. It covers STRIDE threat modeling, the advisory state machine, endpoint scopes, and RFC 7807 errors, structured as Start here → Concepts → Guides → Reference → Help.
 
 ## Why this setup
 
@@ -74,5 +74,5 @@ If you’re hiring for API/security documentation work in Germany, or you need h
 
 **Links**
 
-- Docs: [https://docs.andrewkelly.de/]
+- EmbargoGate API docs: [https://docs.andrewkelly.de/]
 - GitHub: [https://github.com/KellyAndrew]
