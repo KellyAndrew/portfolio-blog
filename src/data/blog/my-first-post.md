@@ -74,5 +74,5 @@ If you’re hiring for API/security documentation work in Germany, or you need h
 
 **Links**
 
-- EmbargoGate API docs: [https://docs.andrewkelly.de/]
-- GitHub: [https://github.com/KellyAndrew]
+- EmbargoGate API docs: [docs.andrewkelly.de](https://docs.andrewkelly.de/)
+- GitHub: [github.com/KellyAndrew](https://github.com/KellyAndrew)
