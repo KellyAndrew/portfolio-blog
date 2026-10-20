@@ -23,7 +23,7 @@ This site is deliberately simple: fewer moving parts, more shipping. The goal is
 I’m running two sites from two separate GitHub repos:
 
 - **Portfolio/blog (Astro Paper):** the place for posts, case studies, and project notes.
-- **Docs site (Astro Starlight):** the reference specification for [EmbargoGate API](https://docs.andrewkelly.de/), a portfolio project modelling a Coordinated Vulnerability Disclosure (CVD) and SBOM ingestion engine aligned with the EU Cyber Resilience Act. It covers STRIDE threat modeling, the advisory state machine, endpoint scopes, and RFC 7807 errors, structured as Start here → Concepts → Guides → Reference → Help.
+- **Docs site (Astro Starlight):** the reference specification for [EmbargoGate API](https://docs.andrewkelly.de/), a portfolio project modelling a Coordinated Vulnerability Disclosure (CVD) and SBOM ingestion engine aligned with the EU Cyber Resilience Act. It covers STRIDE threat modeling, the advisory state machine, endpoint scopes, and RFC 9457 errors, structured as Start here → Concepts → Guides → Reference → Help.
 
 ## Why this setup
 
@@ -35,24 +35,21 @@ I’m optimizing for three things:
 
 ## The workflow
 
-The publishing pipeline has three layers:
+The publishing pipeline runs on a lightweight docs-as-code loop:
 
-- **Content** → write Markdown and assets
-- **Local build** → preview with a dev server
-- **Deployment** → push to GitHub → GitHub Actions → GitHub Pages
+- **Authoring (VS Code):** Draft and structure Markdown documentation and code examples locally.
+- **Verification (Local Dev Server):** Preview Starlight and Astro builds locally to check navigation, layout, and rendering before committing.
+- **Deployment (GitHub Actions → GitHub Pages):** Small, atomic Git commits trigger automated builds and deploy directly to production.
 
-Git is my checkpoint system: small commits, frequent pushes, low risk.
+## What I’m documenting: EmbargoGate API
 
-## What I’ll publish here
+Rather than writing abstract notes about documentation, I’m documenting a reference security API called **EmbargoGate**—a coordinated vulnerability disclosure (CVD) and SBOM/VEX ingestion service designed around EU Cyber Resilience Act (CRA) requirements.
 
-This blog will focus on practical work, including:
+Each post on this blog pairs with a concrete section of the [EmbargoGate API documentation](https://docs.andrewkelly.de/), covering:
 
-- API documentation patterns (reference vs guides, example-first docs, error taxonomy)
-- Security writing fundamentals (threat modeling notes, authN/authZ clarity, secure defaults)
-- Docs-as-code workflow notes (versioning, review, information architecture)
-- Tooling and process write-ups (what worked, what didn’t, what I changed)
-
-I’m also building out the docs site in parallel, so posts can link to concrete pages rather than abstract ideas.
+- **API design & error handling:** REST semantics, HTTP status codes, and RFC 9457 error payloads.
+- **Security architecture:** OAuth 2.0 scopes, time-bound ABAC for embargoed data, mTLS, and HMAC webhook verification.
+- **Domain & compliance:** Coordinated vulnerability disclosure state machines, SBOM/VEX ingestion, and STRIDE threat modeling.
 
 ## What’s next
 
