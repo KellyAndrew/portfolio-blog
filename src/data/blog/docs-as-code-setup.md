@@ -4,7 +4,7 @@ title: "My docs-as-code setup: blog + API docs with automated publishing"
 description: "How I run an Astro Paper blog and an Astro Starlight docs site with GitHub Actions + Pages deploying on every push."
 
 pubDatetime: 2026-10-17T17:45:00+02:00
-modDatetime: 2026-10-17T18:29:00+02:00
+modDatetime: 2026-10-20T12:00:00+02:00
 tags:
   - technical-writing
   - api-documentation
@@ -35,13 +35,7 @@ I’m optimizing for three things:
 
 ## The workflow
 
-I use a simple mental model so I don’t get lost:
-
-- **FILE:** write/edit in VS Code
-- **TERMINAL:** run the dev server and Git commands
-- **BROWSER:** preview locally and verify the live result
-
-And the publishing pipeline has three layers:
+The publishing pipeline has three layers:
 
 - **Content** → write Markdown and assets
 - **Local build** → preview with a dev server
