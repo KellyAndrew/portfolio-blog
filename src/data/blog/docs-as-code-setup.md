@@ -53,11 +53,10 @@ Each post on this blog pairs with a concrete section of the [EmbargoGate API doc
 
 ## What’s next
 
-Over the next few weeks I’ll publish:
+Coming up:
 
-- A short “Start here” overview of the docs site structure and navigation
-- A case study post: how I set up two Astro sites with automated publishing
-- A security writing post: documenting authentication flows clearly (without lying to readers)
+- **A STRIDE threat model for EmbargoGate:** pairs with [Security considerations](https://docs.andrewkelly.de/concepts/security-considerations/)
+- **Documenting authentication without lying to readers:** pairs with [Authentication](https://docs.andrewkelly.de/authentication/)
 
 If you’re hiring for API/security documentation work in Germany, or you need help making complex technical systems readable, this site will show exactly how I work.
 
