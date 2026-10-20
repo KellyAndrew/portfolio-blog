@@ -38,8 +38,8 @@ Custom domains are configured; the `.eu` domain is deactivated.
 
 From the repo root:
 
-    npm install
-    npm run dev
+    pnpm install
+    pnpm run dev
 
 Stop the dev server:
 
@@ -47,8 +47,8 @@ Stop the dev server:
 
 Build locally:
 
-    npm run build
-    npm run preview
+    pnpm run build
+    pnpm run preview
 
 ---
 
