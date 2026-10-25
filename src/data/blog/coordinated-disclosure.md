@@ -16,7 +16,7 @@ Let me set the scene for you. A software researcher discovers a serious vulnerab
 - **Option 2:** tell nobody.
 - **Option 3:** tell the vendor privately and agree when to go public.
 
-**That third option is CVD in a nutshell.**
+**That third option is Coordinated Vulnerability Disclosure (CVD) in a nutshell.**
 
 ### The three models
 
@@ -80,7 +80,7 @@ Confidentiality is key here, vendors and coordinators have to ensure that leaks 
 ### What CVD is not
 
 1. NOT a vulnerability database or identifier:
-   - CVD is the human process of cooperating on a fix. A CVE is just the identifier assigned to the vulnerability, usually made public alongside the advisory.
+   - CVD is the human process of cooperating on a fix. A Common Vulnerabilities and Exposures (CVE) is just the identifier assigned to the vulnerability, usually made public alongside the advisory.
 2. NOT an absolute guarantee of a patch:
    - Breakdowns in cooperation can occur, for example, a vendor might decide a bug is working as intended or they might lack the resources to fix it.
 3. NOT a legally binding contract:
