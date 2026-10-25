@@ -51,12 +51,9 @@ Each post on this blog pairs with a concrete section of the [EmbargoGate API doc
 - **Security architecture:** OAuth 2.0 scopes, time-bound ABAC for embargoed data, mTLS, and HMAC webhook verification.
 - **Domain & compliance:** Coordinated vulnerability disclosure state machines, SBOM/VEX ingestion, and STRIDE threat modeling.
 
-## What’s next
+### Coming up next week...
 
-Coming up:
-
-- **A STRIDE threat model for EmbargoGate:** pairs with [Security considerations](https://docs.andrewkelly.de/concepts/security-considerations/)
-- **Documenting authentication without lying to readers:** pairs with [Authentication](https://docs.andrewkelly.de/authentication/)
+- REST through EmbargoGate: resources, methods, status codes and errors
 
 If you’re hiring for API/security documentation work in Germany, or you need help making complex technical systems readable, this site will show exactly how I work.
 

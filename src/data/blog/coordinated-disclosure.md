@@ -1,5 +1,5 @@
 ---
-title: "Coordinated disclosure in plain English"
+title: "Coordinated disclosure in plain English - Part one"
 description: "What coordinated vulnerability disclosure is, who's involved, and why embargoes matter."
 pubDatetime: 2026-10-25T15:00:00+01:00
 tags:
