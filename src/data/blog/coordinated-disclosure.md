@@ -93,4 +93,5 @@ Confidentiality is key here, vendors and coordinators have to ensure that leaks 
 ### Coming up next week...
 
 Next week, I will be taking a closer look at REST:
-REST through EmbargoGate: resources, methods, status codes and errors
+
+- REST through EmbargoGate: resources, methods, status codes and errors
