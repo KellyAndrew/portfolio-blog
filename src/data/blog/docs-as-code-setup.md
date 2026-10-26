@@ -53,7 +53,7 @@ Each post on this blog pairs with a concrete section of the [EmbargoGate API doc
 
 ### Coming up next week...
 
-- REST through EmbargoGate: resources, methods, status codes and errors
+- Coordinated disclosure in plain English - part one
 
 If you’re hiring for API/security documentation work in Germany, or you need help making complex technical systems readable, this site will show exactly how I work.
 
