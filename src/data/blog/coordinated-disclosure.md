@@ -32,7 +32,9 @@ Given the above this may sound counterintuitive, however, there can also be vali
 
 #### Coordinated disclosure:
 
-If full disclosure and no disclosure are the two extremes of the same spectrum, then coordinated disclosure lies right in the middle of the two. The goal here is to make sure that anyone affected by a vulnerability has all the information they need to make informed decisions about their actions to secure their systems. The public and users of vulnerable products deserve to be informed too. Ideally, everyone involved coordinates and cooperates to protect the public, with the right approach this can be a public relations win for the vendor. Coordinating the release of information allows the users of a product to take sufficient action to protect themselves, while simultaneously, delaying reverse engineering and exploit development long enough for a fix to be developed and deployed.
+If full disclosure and no disclosure are the two extremes of the same spectrum, then coordinated disclosure lies right in the middle of the two. The goal here is to make sure that anyone affected by a vulnerability has all the information they need to make informed decisions about their actions to secure their systems.
+
+The public and users of vulnerable products deserve to be informed too. Ideally, everyone involved coordinates and cooperates to protect the public, with the right approach this can be a public relations win for the vendor. Coordinating the release of information allows the users of a product to take sufficient action to protect themselves, while simultaneously, delaying reverse engineering and exploit development long enough for a fix to be developed and deployed.
 
 ## The problem
 
