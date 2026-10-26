@@ -22,7 +22,7 @@ Let me set the scene for you. A software researcher discovers a serious vulnerab
 
 The options I just listed are also commonly referred to as the disclosure scenarios:
 
-#### Full disclosure:
+### Full disclosure:
 
 This is complete transparency. All information on discovered vulnerabilities is shared with the public. This would usually also include the release of proof of concept exploit code and a report describing the problem. Sometimes, finders will either not inform the vendor before going public or only inform a vendor as they go public with the problem. This is often described as serving the greater good, as it allows optimal responses given all the information. Having all the information available means you can also reproduce the issue. Vendors sometimes publish full details themselves once a fix is out.
 
@@ -40,7 +40,7 @@ Software vulnerabilities and compromised systems are often synonymous with chaos
 
 ## Managing the problem is complicated
 
-Informing the public of a vulnerability/problem is not as easy as it may at first seem. Offering a solution or specific course of action to a problem, can often result in giving hackers an advantage as there will always be somewhat of a time lag until the problem or vulnerability is fixed. During this critical time, adversaries can wreak havoc by exploiting these vulnerabilities. This makes managing vulnerability disclosures very difficult.
+Informing the public of a vulnerability/problem is not as easy as it may at first seem. Offering a solution or specific course of action to a problem, can often result in giving adversaries an advantage as there will always be somewhat of a time lag until the problem or vulnerability is fixed. During this critical time, adversaries can wreak havoc by exploiting these vulnerabilities. This makes managing vulnerability disclosures very difficult.
 
 The complicated nature of managing these types of issues is a direct result of their incomplete, contradictory and changing requirements which are also often difficult to recognize. The EmbargoGate project is a reference specification and not a live product, nevertheless, the approach and methodologies used in this project present valid solutions to these types of problems.
 
@@ -50,19 +50,19 @@ The complicated nature of managing these types of issues is a direct result of t
 
 ## Who is involved?
 
-**Finder/Discoverer**
+**Finder/Discoverer**:
 This is the person, or organization that identifies the vulnerability.
 
-**Reporter**
+**Submitter**:
 The individual or organization that informs the vendor of the vulnerability.
 
-**Vendor**
+**Vendor**:
 The individual or organization that created or maintains the product that is vulnerable. Larger vendors handle reports through a Product Security Incident Response Team (PSIRT).
 
-**Coordinator**
+**Coordinator**:
 An individual or organization that enables the coordinated response process. This could also typically be the Computer Emergency Response Team / Coordination Center (CERT/CC) or a national Computer Security Incident Response Team (CSIRT), for example in Germany this would be the Computer Emergency Response Team for Federal Authorities (BSI's CERT-Bund).
 
-**Deployer**
+**Deployer**:
 The individual or organization that must deploy a patch or take other remedial action.
 
 ## Map of CVD phases to CVD roles
@@ -71,7 +71,7 @@ The individual or organization that must deploy a patch or take other remedial a
 
 ## What exactly is an embargo?
 
-We've all seen vague news reports that only seem to give cursory details about a crime, this is so that the criminals or perpetrators cannot gain any insight into what detectives already know or are about to do or discover, because this information could potentially give the criminal(s) an advantage to keep one step ahead of their pursuers. An embargo is essentially the same thing, except for computer software. Embargoes are agreed periods of confidentiality that fall between the report and publication phases. This gives security teams (usually a subset of a development team) the time they need to devise a fix and test that it works. This takes time and should not be rushed, you need to know that your patch will work and that you fixed the problem. During this sensitive period, the last thing you want is for any specific information to be leaked that could potentially help the adversary and allow them to further exploit the vulnerability. It is not unusual to see 90 days for this phase, this is a norm rather than a specific rule.
+Embargoes are agreed periods of confidentiality that fall between the report and publication phases. This gives security teams (usually a subset of a development team) time to come up with a fix and test that it works. Fixes like this can take a while and should not be rushed, the security team need to know that their patch will work and that they fixed the problem. During this sensitive period, the last thing anyone wants is for any specific information to be leaked that could potentially help the adversary and allow them to further exploit the vulnerability. It is not unusual to see 90 days for this phase, this is a norm rather than a specific rule.
 
 ### Constraints
 
