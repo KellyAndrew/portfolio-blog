@@ -42,7 +42,7 @@ Software vulnerabilities and compromised systems are often synonymous with chaos
 
 Informing the public of a vulnerability/problem is not as easy as it may at first seem. Offering a solution or specific course of action to a problem, can often result in giving hackers an advantage as there will always be somewhat of a time lag until the problem or vulnerability is fixed. During this critical time, adversaries can wreak havoc by exploiting these vulnerabilities. This makes managing vulnerability disclosures very difficult.
 
-The complicated nature of managing these types of issues is a direct result of their incomplete, contradictory and changing requirements which are also often difficult to recognize. Before we go any further, I would like to point out that the EmbargoGate project is a reference specification and not a live product. However, the approach and methodologies used in this project present a valid solution to these types of problems.
+The complicated nature of managing these types of issues is a direct result of their incomplete, contradictory and changing requirements which are also often difficult to recognize. The EmbargoGate project is a reference specification and not a live product, nevertheless, the approach and methodologies used in this project present valid solutions to these types of problems.
 
 > "Coordinated vulnerability disclosure (CVD) is a process for reducing adversary advantage while an information security vulnerability is being mitigated. CVD is a process and not an event. Releasing a patch or publishing a document are important events within the process, but do not define it."
 >
@@ -84,7 +84,7 @@ Confidentiality is key here, vendors and coordinators have to ensure that leaks 
 2. NOT an absolute guarantee of a patch:
    - Breakdowns in cooperation can occur, for example, a vendor might decide a bug is working as intended or they might lack the resources to fix it.
 3. NOT a legally binding contract:
-   - Built on trust, ethics and industry etiquette and while it can be formalized into a company's policy it remains a voluntary agreement that runs on good communication.
+   - Built on trust, ethics and industry etiquette and while it can be formalized into a company's policy it remains a voluntary agreement that runs on good communication. Consequently, it is often referred to as 'gentlemen's agreement'.
 4. NOT a bug bounty:
    - Think of CVD like a communication framework for the safe reporting of vulnerabilities. You can practice and be a part of CVD without money ever changing hands, whereas a bug bounty would traditionally sit on top of that framework offering financial incentives to researchers for their discoveries.
 5. NOT full disclosure:
@@ -92,6 +92,6 @@ Confidentiality is key here, vendors and coordinators have to ensure that leaks 
 
 ### Coming up next week...
 
-Next week, I will be taking a closer look at REST:
+Next week, I will be taking a closer look at: What can go wrong and how the EU's Cyber Resilience Act is changing architecture.
 
-- REST through EmbargoGate: resources, methods, status codes and errors
+- Beyond the gentlemen's agreement: Engineering compliance and fail-closed state machines for the EU Cyber Resilience Act
