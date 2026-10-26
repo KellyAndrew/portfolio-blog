@@ -90,8 +90,10 @@ Confidentiality is key here, vendors and coordinators have to ensure that leaks 
 5. NOT full disclosure:
    - CVD actively restricts the immediate spread of information to protect users while a fix is being prepared.
 
-### Coming up next week:
+### Coming up next week...
 
-Next week, I will be taking a closer look at: What can go wrong and how the EU's Cyber Resilience Act is changing architecture.
+What can go wrong and how the EU's Cyber Resilience Act is changing architecture.
 
 - Beyond the gentlemen's agreement: Engineering compliance and fail-closed state machines for the EU Cyber Resilience Act
+
+If you’re hiring for API/security documentation work in Germany, or you need help making complex technical systems readable, this site will show exactly how I work.
