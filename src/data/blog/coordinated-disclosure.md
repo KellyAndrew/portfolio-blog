@@ -26,11 +26,11 @@ The options I just listed are also commonly referred to as the disclosure scenar
 
 This is complete transparency. All information on discovered vulnerabilities is shared with the public. This would usually also include the release of proof of concept exploit code and a report describing the problem. Sometimes, finders will either not inform the vendor before going public or only inform a vendor as they go public with the problem. This is often described as serving the greater good, as it allows optimal responses given all the information. Having all the information available means you can also reproduce the issue. Vendors sometimes publish full details themselves once a fix is out.
 
-#### No disclosure:
+### No disclosure:
 
 Given the above this may sound counterintuitive, however, there can also be valid reasons for this approach. Non-disclosure agreements (NDAs) protect trade secrets and limit bad press. You don't always want people looking behind the curtain. Of course, the fewer people know about the issue, the less likely an exploit will be, that said, no one can really say what the impact of non-disclosure actually is, because ahem, mum's the word!
 
-#### Coordinated disclosure:
+### Coordinated disclosure:
 
 If full disclosure and no disclosure are the two extremes of the same spectrum, then coordinated disclosure lies right in the middle of the two. The goal here is to make sure that anyone affected by a vulnerability has all the information they need to make informed decisions about their actions to secure their systems.
 
