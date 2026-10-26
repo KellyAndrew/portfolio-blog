@@ -12,6 +12,8 @@ const blog = defineCollection({
       pubDatetime: z.date(),
       modDatetime: z.date().optional().nullable(),
       title: z.string(),
+      subtitle: z.string().optional(),
+      subtitleLink: z.object({ text: z.string(), href: z.string() }).optional(),
       featured: z.boolean().optional(),
       draft: z.boolean().optional(),
       tags: z.array(z.string()).default(["others"]),

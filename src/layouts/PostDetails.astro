@@ -24,6 +24,8 @@ const { post, posts } = Astro.props;
 
 const {
   title,
+  subtitle,
+  subtitleLink,
   author,
   description,
   ogImage: initOgImage,
@@ -98,6 +100,24 @@ const nextPost =
     >
       {title}
     </h1>
+    {
+      subtitle && (
+        <p class="mt-2 text-lg italic opacity-80">
+          {subtitle}
+          {subtitleLink && (
+            <>
+              ·{" "}
+              <a
+                href={subtitleLink.href}
+                class="underline decoration-dashed underline-offset-4 hover:text-accent"
+              >
+                {subtitleLink.text}
+              </a>
+            </>
+          )}
+        </p>
+      )
+    }
     <div class="my-2 flex items-center gap-2">
       <Datetime {pubDatetime} {modDatetime} {timezone} size="lg" />
       <span
