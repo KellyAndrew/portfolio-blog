@@ -96,7 +96,7 @@ What can go wrong and how the EU's Cyber Resilience Act is changing architecture
 
 - Beyond the gentlemen's agreement: Engineering compliance and fail-closed state machines for the EU Cyber Resilience Act
 
-If you’re hiring for API/security documentation work in Germany, or you need help making complex technical systems readable, this site will show 
+If you’re hiring for API/security documentation work in Germany, or you need help making complex technical systems readable, this site will show
 exactly how I work.
 
 ---
