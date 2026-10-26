@@ -1,7 +1,7 @@
 import type { Props } from "astro";
 import IconMail from "@/assets/icons/IconMail.svg";
 import IconGitHub from "@/assets/icons/IconGitHub.svg";
-import IconLinkedin from "@/assets/icons/IconLinkedin.svg";
+// import IconLinkedin from "@/assets/icons/IconLinkedin.svg";
 import { SITE } from "@/config";
 
 interface Social {
@@ -18,12 +18,14 @@ export const SOCIALS: Social[] = [
     linkTitle: `${SITE.title} on GitHub`,
     icon: IconGitHub,
   },
-  {
-    name: "LinkedIn",
-    href: "https://www.linkedin.com/in/username/",
-    linkTitle: `${SITE.title} on LinkedIn`,
-    icon: IconLinkedin,
-  },
+  // LinkedIn hidden until December 2026: set the real profile URL, then uncomment
+  // this entry and the IconLinkedin import above.
+  // {
+  //   name: "LinkedIn",
+  //   href: "https://www.linkedin.com/in/username/",
+  //   linkTitle: `${SITE.title} on LinkedIn`,
+  //   icon: IconLinkedin,
+  // },
   {
     name: "Mail",
     href: "mailto:hello@andrewkelly.de",

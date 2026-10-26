@@ -54,12 +54,3 @@ Each post on this blog pairs with a concrete section of the [EmbargoGate API doc
 ### Coming up next week...
 
 - Coordinated disclosure in plain English - part one
-
-If you’re hiring for API/security documentation work in Germany, or you need help making complex technical systems readable, this site will show exactly how I work.
-
----
-
-**Links**
-
-- EmbargoGate API docs: [docs.andrewkelly.de](https://docs.andrewkelly.de/)
-- GitHub: [github.com/KellyAndrew](https://github.com/KellyAndrew)

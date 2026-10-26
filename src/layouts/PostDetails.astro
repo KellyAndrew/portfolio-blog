@@ -13,6 +13,7 @@ import { slugifyStr } from "@/utils/slugify";
 import IconChevronLeft from "@/assets/icons/IconChevronLeft.svg";
 import IconChevronRight from "@/assets/icons/IconChevronRight.svg";
 import { SITE } from "@/config";
+import { SOCIALS } from "@/constants";
 
 type Props = {
   post: CollectionEntry<"blog">;
@@ -35,6 +36,8 @@ const {
 } = post.data;
 
 const { Content } = await render(post);
+
+const githubUrl = SOCIALS.find(social => social.name === "GitHub")?.href;
 
 let ogImageUrl: string | undefined;
 
@@ -111,6 +114,25 @@ const nextPost =
       class="app-prose mt-8 w-full max-w-app prose-pre:bg-(--shiki-light-bg) dark:prose-pre:bg-(--shiki-dark-bg)"
     >
       <Content />
+
+      <div data-pagefind-ignore>
+        <p>
+          If you’re hiring for API/security documentation work in Germany, or
+          you need help making complex technical systems readable, this site
+          will show exactly how I work.
+        </p>
+        <hr />
+        <p><strong>Links</strong></p>
+        <ul>
+          <li>
+            EmbargoGate API docs:
+            <a href="https://docs.andrewkelly.de/">docs.andrewkelly.de</a>
+          </li>
+          <li>
+            GitHub: <a href={githubUrl}>github.com/KellyAndrew</a>
+          </li>
+        </ul>
+      </div>
     </article>
 
     <hr class="my-8 border-dashed" />
