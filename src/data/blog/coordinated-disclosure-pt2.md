@@ -45,8 +45,6 @@ As you can see, it is a delicate job balancing trust, discipline and timing - th
 
 ## The EU & recent developments
 
-### The EU & recent developments
-
 While it has always been critical to deal with these issues in a confidential and timely manner, recent legislation has obligated companies to take a coordinated approach and sharpen their focus. This means most organizations now have to handle (manage) sensitive vulnerability data under time pressure:
 
 > [!info] EU Cyber Resilience Act (CRA) – Article 14 Reporting Mandates
