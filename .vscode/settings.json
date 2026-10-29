@@ -6,5 +6,20 @@
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.wordWrap": "on"
-  }
+  },
+  "cSpell.language": "en-US",
+  "cSpell.words": [
+    "AstroPaper",
+    "CSAF",
+    "CVSS",
+    "embargogate",
+    "frontmatter",
+    "Lauret",
+    "pubDatetime",
+    "SBOM",
+    "SBOMs",
+    "Shostack",
+    "Starlight",
+    "VEX"
+  ]
 }

@@ -5,6 +5,7 @@ pubDatetime: 2026-10-25T15:00:00+01:00
 tags:
   - security
   - cvd
+  - embargogate
 draft: false
 ---
 
