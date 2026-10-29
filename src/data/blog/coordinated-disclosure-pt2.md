@@ -47,7 +47,7 @@ As you can see, it is a delicate job balancing trust, discipline and timing - th
 
 While it has always been critical to deal with these issues in a confidential and timely manner, recent legislation has obligated companies to take a coordinated approach and sharpen their focus. This means most organizations now have to handle (manage) sensitive vulnerability data under time pressure:
 
-> [!info] EU Cyber Resilience Act (CRA) – Article 14 Reporting Mandates
+> EU Cyber Resilience Act (CRA) – Article 14 Reporting Mandates
 > Source: [European Commission CRA Reporting Page](https://www.cyberresilienceact.eu/reporting.html) | Effective Date: **September 11, 2026**
 >
 > - **The 24-Hour "Early Warning" Trigger**
