@@ -53,19 +53,19 @@ The complicated nature of managing these types of issues is a direct result of t
 
 ## Who is involved?
 
-**Finder/Discoverer**:
+**Finder/Discoverer**
 This is the person, or organization that identifies the vulnerability.
 
-**Submitter**:
+**Submitter**
 The individual or organization that informs the vendor of the vulnerability.
 
-**Vendor**:
+**Vendor**
 The individual or organization that created or maintains the product that is vulnerable. Larger vendors handle reports through a Product Security Incident Response Team (PSIRT).
 
-**Coordinator**:
+**Coordinator**
 An individual or organization that enables the coordinated response process. This could also typically be the Computer Emergency Response Team / Coordination Center (CERT/CC) or a national Computer Security Incident Response Team (CSIRT), for example in Germany this would be the Computer Emergency Response Team for Federal Authorities (BSI's CERT-Bund).
 
-**Deployer**:
+**Deployer**
 The individual or organization that must deploy a patch or take other remedial action.
 
 ## Map of CVD phases to CVD roles
