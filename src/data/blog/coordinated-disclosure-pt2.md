@@ -4,13 +4,13 @@ subtitle: "Why embargoes fail"
 subtitleLink:
   text: "Read Part one"
   href: "/posts/coordinated-disclosure/"
-description: "..."
+description: "Why embargoes fail, what the Cyber Resilience Act changes, and what engineering can and can't fix."
 pubDatetime: 2026-10-31T15:00:00+01:00
 tags:
   - security
   - cvd
   - embargogate
-draft: true
+draft: false
 ---
 
 ## What does the gentlemen's agreement run on?
@@ -23,7 +23,7 @@ An embargo is a deal that boils down to this: researchers report vulnerabilities
 
 ### 1. Active exploitation
 
-A sophisticated adversary is already using the bug when the vendor receives the report. Public safety overrides the agreement and the embargo is terminated immediately to give defenders a chance to protect themselves or limit the damage. Staying silent only serves to protect the adversaries. This is exactly the situation that the EU Cyber Resilience Act (CRA) now regulates: the vendor has 24 hours to report it to the authorities.
+A sophisticated adversary is already using the bug when the vendor receives the report. Public safety overrides the agreement and the embargo is usually cut short to give defenders a chance to protect themselves or limit the damage. Staying silent only serves to protect the adversaries. This is exactly the situation that the European Union (EU) Cyber Resilience Act (CRA) now regulates: the vendor has 24 hours to report it to the authorities.
 
 ### 2. Vendor foot dragging and ghosting
 
@@ -37,7 +37,7 @@ Even when the vendor keeps the deal, the fix itself can give the bug away. When 
 
 Typically, this is information drifting outside of the need-to-know circle, whether intentionally or not, resulting in a leak. It can start with something as innocent as a spreadsheet shared too widely or a comment to a customer. Social media makes accidental disclosures all too easy. Ideally, there should be clearly defined groups involved in the CVD process.
 
-### 5. Legal and PR retaliation
+### 5. Legal and public relations (PR) retaliation
 
 Instead of reacting appropriately to reports of a vulnerability, some vendors leverage the legal system and send cease and desist letters or threaten researchers with Germany's "hacker paragraph" (§202c of the German Criminal Code, or _Strafgesetzbuch_), which criminalizes preparing to spy on data. Not surprisingly, under threat of legal action, researchers may pull out of the embargo to save themselves, sometimes dropping the details anonymously to journalists. This can result in the "Streisand effect" whereby the vendor's own move backfires and the story gets bigger.
 
@@ -65,3 +65,25 @@ While it has always been critical to deal with these issues in a confidential an
 >   - Products already on the market are not exempt: the reporting rules also cover products placed on the market before December 11, 2027, when the rest of the CRA applies (Article 69(3)).
 
 PGP inboxes and spreadsheets are good tools, but they can't reliably meet a 24-hour deadline, so the process needs guardrails that don't depend on someone remembering.
+
+## Engineering against failures
+
+EmbargoGate is an application programming interface (API) reference specification, not a live product. It has been designed with the new CRA as a central pillar. By designing with this new regulation in mind, it moves beyond PGP email and spreadsheets to effectively install guardrails for the whole process. As a supporting mechanism it helps the teams stick to deadlines, while the logs record evidence and states to give an objective foundation.
+
+### Active exploitation
+
+EmbargoGate uses an append-only audit log to leave a clear record behind. With email and spreadsheets, the door was always open to confusion over who is allowed to break the embargo, often with no record of why the embargo was broken. This is solved by ensuring that the coordinator has to record a reason for the early break which then goes into the log. It also adds control over who can end the embargo early: this can only be done by a coordinator with an `advisory:disclose` scope. See the [FAQ](https://docs.andrewkelly.de/help/faq/#can-an-advisory-be-disclosed-before-the-embargo-ends).
+
+### Ghosting & vendor foot dragging
+
+By recording actor identity, OAuth 2.0 client, timestamps and before and after states, EmbargoGate provides hard evidence preventing vendors from denying they received the report. The log shows if the vendor sat on the report, and while it doesn't force a fix, it removes the vendor's excuses. See [Security considerations](https://docs.andrewkelly.de/concepts/security-considerations/).
+
+### Over-sharing
+
+Maintaining a tight circle is a difficult job. Even error messages can give away vital clues to a savvy adversary. EmbargoGate implements time-bound attribute-based access control (ABAC) to ensure that only the coordination group sees the advisory while it's `EMBARGOED`, and everyone else gets a `404` - which claims the resource does not exist, so it gives nothing away. A `403` would be enough to confirm that the advisory exists. See [Authentication](https://docs.andrewkelly.de/authentication/#time-bound-abac).
+
+## Engineering limitations
+
+You might have noticed that two of the failures listed above have not been addressed. Patch-gapping and legal retaliation are outside any API's control, hence their absence. It is important to be clear about limitations and definitions, so that users know exactly where they stand and what they still have to plan for.
+
+_Coming up next week: Why a `404` can be a security feature, and how REST works through EmbargoGate._
