@@ -41,24 +41,27 @@ Typically, this is information drifting outside of the need-to-know circle, whet
 
 Instead of reacting appropriately to reports of a vulnerability, some vendors leverage the legal system and send cease and desist letters or threaten researchers with Germany's "hacker paragraph" (§202c of the German Criminal Code, or _Strafgesetzbuch_), which criminalizes preparing to spy on data. Not surprisingly, under threat of legal action, researchers may pull out of the embargo to save themselves, sometimes dropping the details anonymously to journalists. This can result in the "Streisand effect" whereby the vendor's own move backfires and the story gets bigger.
 
-As you can see, it is a delicate job balancing trust, discipline and timing - there are just so many moving parts. The question now is: How do we solve this?
+As you can see, it is a delicate job balancing trust, discipline and timing - there are just so many moving parts. The failures used to cost a vendor its reputation, and now they're a legal matter.
 
-## The EU & recent developments
+## The EU & the Cyber Resilience Act (CRA)
 
-While it has always been critical to deal with these issues in a confidential and timely manner, recent legislation has obligated companies to take a coordinated approach and sharpen their focus. This means most organizations now have to handle (manage) sensitive vulnerability data under time pressure:
+While it has always been critical to deal with these issues in a confidential and timely manner, recent legislation now obligates manufacturers to report actively exploited vulnerabilities:
 
-> EU Cyber Resilience Act (CRA) – Article 14 Reporting Mandates
-> Source: [European Commission CRA Reporting Page](https://www.cyberresilienceact.eu/reporting.html) | Effective Date: **September 11, 2026**
+> **EU Cyber Resilience Act (CRA) – Article 14 Reporting Mandates**
+>
+> Source: [Regulation (EU) 2024/2847, Article 14](https://eur-lex.europa.eu/eli/reg/2024/2847/oj) | Effective Date: **September 11, 2026**
 >
 > - **The 24-Hour "Early Warning" Trigger**
->   - Manufacturers must alert ENISA within 24 hours of becoming aware of any actively exploited vulnerability or severe security incident via ENISA's Single Reporting Platform. The national coordinator, the CSIRT is then also informed.
+>   - Manufacturers must send an early warning within 24 hours of becoming aware of an actively exploited vulnerability in their product. It goes via the single reporting platform to the national Computer Security Incident Response Team (CSIRT) acting as coordinator, and the European Union Agency for Cybersecurity (ENISA) receives it at the same time.
 >   - This initial notification is required even if a patch or fix is not yet available.
-> - **The 72-Hour Detailed Notification**
->   - A deeper technical update must be submitted within 72 hours of awareness.
->   - This must include initial assessments of the exploit's severity, impact, and any indicators of compromise.
-> - **Vulnerabilities**
->   - A formal closing report must be filed within 14 days of releasing a corrective patch or fix.
->   - It must detail the root cause, remediation steps, and how users can apply the solution.
+> - **The 72-Hour Vulnerability Notification**
+>   - A fuller notification must follow within 72 hours of becoming aware.
+>   - It must give general information about the product, the general nature of the exploit and the vulnerability, any corrective or mitigating measures already taken, and what users can do to protect themselves.
+> - **The 14-Day Final Report**
+>   - A final report must be filed no later than 14 days after a corrective or mitigating measure is available.
+>   - It must describe the vulnerability, including its severity and impact, any information about the malicious actor exploiting it (where available), and the security update or other fix.
 > - **Applies to products already on the market**
->   - The reporting rules apply to products with digital elements within scope and connected hardware/software actively available on the EU market.
->   - Legacy products placed on the market prior to the September 2026 deadline are not exempt from these reporting windows.
+>   - The reporting rules apply from September 11, 2026 to all products with digital elements within the scope of the CRA.
+>   - Products already on the market are not exempt: the reporting rules also cover products placed on the market before December 11, 2027, when the rest of the CRA applies (Article 69(3)).
+
+PGP inboxes and spreadsheets are good tools, but they can't reliably meet a 24-hour deadline, so the process needs guardrails that don't depend on someone remembering.
