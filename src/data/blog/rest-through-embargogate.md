@@ -67,7 +67,7 @@ So the answer to the question from the introduction: a client has a valid token 
 
 ### 404
 
-A caller outside the coordination group requests an embargoed advisory, what error status code do they get, a 404 or a 403? They would get a 404, stating that the resource does not exist. Why is that? A 403 would confirm that the resource exists and that the user does not have sufficient rights to access it, which in itself is a leak. Knowing an advisory exists tells an attacker there's an unpatched vulnerability to look for (see [Part 2](/posts/coordinated-disclosure-pt2/)).
+A caller outside the coordination group requests an embargoed advisory, what error status code do they get, a 404 or a 403? They would get a 404, stating that the resource does not exist. Why is that? A 403 would confirm that the resource exists and that the user does not have sufficient rights to access it, which in itself is a leak. Knowing an advisory exists tells an attacker there's an unpatched vulnerability to look for (see [Part 2](/posts/coordinated-disclosure-pt2/)). This has to apply in every non-public state: a response that changed from 403 to 404 would give the advisory away.
 
 ### 409 vs. 422
 
