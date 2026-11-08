@@ -21,7 +21,7 @@ In the case of the EmbargoGate API, the resources are represented as JavaScript 
 
 ## Methods: the verbs
 
-The only HTTP methods used here are `GET`, `POST`, and `DELETE`. Neither `PUT` nor `PATCH` is used. This is because state changes have to go through the state machine, and `PUT` or `PATCH` allow clients to edit advisories directly. This would skip the transition rules, the per-transition scopes, and the audit log, which is exactly what we want to avoid. `/transitions` exists to stop exactly this issue.
+The only HTTP methods used here are `GET`, `POST`, and `DELETE`. Neither `PUT` nor `PATCH` is used. This is because state changes have to go through the state machine, and exposing `PUT` or `PATCH` could let clients edit advisories directly. This could skip the transition rules, the per-transition scopes, and the audit log. `/transitions` exists to stop exactly this issue.
 
 ### Safe vs. idempotent
 
@@ -29,7 +29,7 @@ The only HTTP methods used here are `GET`, `POST`, and `DELETE`. Neither `PUT` n
 
 - Idempotent: Sending the same request several times has the same effect on the server as sending it once. From the Latin, _idem_ means the same, and _potent_ means power in the mathematical sense as in 1 to the power of 2: 1² = 1³ = 1. An _idempotent_ value stays the same no matter what power you raise it to. Applying the operation again changes nothing, and HTTP borrowed the idea.
 
-So, if the connection drops during `DELETE /webhooks/{webhook_id}`, then you would still be able to resend the request, because in this case, something can only be deleted once. Once it is gone, requesting again will not change anything on the server. The resend may return a 404, however, this is still idempotent because idempotency is about the effect on the server. However, if it drops during `POST /advisories`, then resending could create a duplicate advisory.
+So, if the connection drops during `DELETE /webhooks/{webhook_id}`, then you would still be able to resend the request, because in this case, something can only be deleted once. Once it is gone, requesting again will not change anything on the server. The resend may return a 404, but this is still idempotent because idempotency is about the effect on the server. However, if it drops during `POST /advisories`, then resending could create a duplicate advisory.
 
 The table below shows three examples taken directly from the EmbargoGate documentation and categorizes them using the criteria defined above:
 
@@ -45,7 +45,7 @@ For more information, see the official Request for Comments (RFC) documents publ
 
 `PUT`: this method replaces the whole resource. However, if you forget something in your replacement that was present in the original, then that information is lost when the resource is overwritten. It is not safe, but is idempotent.
 
-`PATCH`: this method is used to modify only part of a resource, and is neither safe, nor idempotent. Repeating the same patch can change the result depending on what it asked for. For example, "add 1" gives a different result each time, while "set this field to X" doesn't.
+`PATCH`: this method is used to modify only part of a resource. It is not safe, and it is not guaranteed to be idempotent. Repeating the same patch can change the result depending on what it asks for. For example, "add 1" gives a different result each time, while "set this field to X" doesn't.
 
 So why does EmbargoGate use neither of these methods? Because submissions are fixed records. For example, when an SBOM is submitted, EmbargoGate records its Secure Hash Algorithm (SHA-256) digest, a fingerprint of its content. The submitter also signs it with Sigstore Cosign, which proves who submitted it. Any edit, even a minor one, would change the SHA-256 digest, so it would no longer match the recorded one, and the signature would be invalidated. And as the Methods section showed, state changes only go through the state machine.
 
@@ -59,7 +59,7 @@ Error status codes in the 5xx range (500 to 599) point to server or implementati
 
 ### 400 vs. 422
 
-A 400 points to a malformed request, in other words: "I can't read this," for example, broken JSON. Whereas, the 422 indicates that the request can be read, for example, the JSON is valid, because a 422 can also mean that a required field is missing; so "I can read it, but the content fails a check."
+A 400 points to a malformed request, in other words: "I can't read this," for example, broken JSON. Whereas a 422 indicates that the request can be read, for example, the JSON is valid, but it failed a check due to an invalid signature, a missing required field, or content that doesn't match the schema; so "I can read it, but the content fails a check."
 
 ### 401 vs. 403
 
