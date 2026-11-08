@@ -108,4 +108,4 @@ Errors should never reveal internal details like stack traces, database errors, 
 
 401 vs. 403: let's say a client has a valid token but lacks the correct scope. Which code would they get? You should now know that the answer is 403 and, more importantly, why. This post was a quick journey into the resources, methods, status codes and errors used by EmbargoGate. EmbargoGate's design (signed records, a state machine) decided which methods it needs.
 
-Coming up next week: OpenAPI 3.1, the contract behind the docs.
+_Coming up next week: OpenAPI 3.1, the contract behind the docs._
